@@ -194,10 +194,16 @@ function showMealDetails(meal) {
 
 function showSearch() {
     let data = ` <div class="d-flex px-5">
-    <input type="text" placeholder="Search By Name" name="name"
+    <div class="row gy-3">
+        <div class="col-md-6 ">
+        <input type="text" placeholder="Search By Name" name="name"
         class="form-control me-3 bg-black search-input">
-    <input type="text" placeholder="Search By First Letter" name="firstLetter"  maxlength="1"
+    </div>    
+        <div class="col-md-6">
+        <input type="text" placeholder="Search By First Letter" name="firstLetter"  maxlength="1"
         class="form-control bg-black search-input">
+        </div>    
+    </div>
     </div>` ;
     $(".home .search-area").removeClass("d-none");
     $(".home .search-area").html(data);
@@ -306,22 +312,22 @@ function showContact() {
       <i class="fa-solid fa-check text-success"></i>  Message Sent Succeffuly
       </div>
     <div class="row w-75 mx-auto">
-        <div class="col-md-6 ">
+        <div class="col-md-6">
             <input type="text" placeholder="Enter Your Name" name="name" class="form-control mb-2">
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
             <input type="email" placeholder="Enter Your Email" name="email" class="form-control mb-2">
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
             <input type="text" placeholder="Enter Your Phone" name="phone" class="form-control mb-2">
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
             <input type="number" placeholder="Enter Your Age" name="age" class="form-control mb-2">
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
             <input type="password" placeholder="Enter Your Password" name="password" class="form-control mb-2">
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
             <input type="password" placeholder="RePassword" name="rePassword" class="form-control mb-2">
         </div>
        <div class="pt-5 d-flex justify-content-center align-items-center">
