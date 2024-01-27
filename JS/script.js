@@ -138,6 +138,7 @@ function addRow() {
     $(".home .meal-area").html(`<div class="row gy-4 mainRow"></div>`);
 }
 function showMealDetails(meal) {
+    $(".home .search-area").addClass("d-none");
     let ingrediant = ``;
     for (let i = 0; i <= 20; i++) {
         const ingValue = meal[`strIngredient` + i];
