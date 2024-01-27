@@ -7,6 +7,9 @@
 body {
     overflow: hidden;
 }
+.max-w-75{
+    max-width: 75%;
+}
 i{
     cursor: pointer;
 }

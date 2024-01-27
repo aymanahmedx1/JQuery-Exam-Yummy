@@ -2,4 +2,7 @@
     aside{
         width: 50%;
     }
+    .max-w-75{
+        max-width: 100%;
+    }
 }

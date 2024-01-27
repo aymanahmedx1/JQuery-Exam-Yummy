@@ -311,7 +311,7 @@ function showContact() {
      <div class="alert alert-success  timedMessage position-fixed top-0 end-0 m-3 " role="alert">
       <i class="fa-solid fa-check text-success"></i>  Message Sent Succeffuly
       </div>
-    <div class="row w-75 mx-auto">
+    <div class="row max-w-75 mx-auto">
         <div class="col-md-6">
             <input type="text" placeholder="Enter Your Name" name="name" class="form-control mb-2">
         </div>
