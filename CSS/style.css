@@ -1,0 +1,164 @@
+/* ~ START  Globals */
+:root {
+    --background-color: #0d0d0d;
+    --hover-color: tomato;
+}
+
+body {
+    overflow: hidden;
+}
+i{
+    cursor: pointer;
+}
+i:not(.open) {
+    transition: all .5s;
+}
+
+i:not(.open, .close):hover {
+    color: var(--hover-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* ~ END  Globals */
+/* ! START LOADER */
+.loader-area {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    --_c: no-repeat radial-gradient(farthest-side, white 92%, #0000);
+    background:
+        var(--_c) top,
+        var(--_c) left,
+        var(--_c) right,
+        var(--_c) bottom;
+    background-size: 12px 12px;
+    animation: l7 1s infinite;
+}
+
+@keyframes l7 {
+    to {
+        transform: rotate(.5turn)
+    }
+}
+
+/* ! END LOADER */
+/* * START SIDEBAR */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    width: 25%;
+    z-index: 999;
+}
+
+aside .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 2px;
+    position: relative;
+    top: 150px;
+}
+
+aside .menu ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 1.125rem;
+}
+
+aside .button-area {
+    background-color: white;
+}
+
+aside .button-area img {
+    width: 50px;
+}
+
+aside .button-area i {
+    cursor: pointer;
+}
+
+aside .controls i {
+    font-size: 20px;
+}
+
+aside .close {
+    display: none;
+}
+
+/* * END SIDEBAR */
+.home {
+    min-height: 100vh !important;
+    background-color: var(--background-color);
+}
+
+.section-loader {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-item {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.meal-item img {
+    transition: all 1s .5s;
+}
+
+.meal-item .overlayer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .7);
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.meal-item:hover .overlayer {
+    top: 0;
+    text-overflow: ellipsis;
+}
+
+.meal-item:hover img {
+    transform: scale(1.1);
+}
+
+.meal-item .overlayer h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.search-input {
+    color: white !important;
+}
+.search-input::placeholder {
+    color: white;
+}
+.contact-us{
+   height: 85vh;
+}

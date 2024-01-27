@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayman Ahmed">
+    <title>Yummy</title>
+    <!-- ! FavIcon -->
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Main Style-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Media Style-->
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+
+<body>
+    <div class="loader-area d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+    <aside class="d-flex">
+        <div class="menu flex-grow-1 d-flex flex-column justify-content-between p-3">
+            <ul>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#category">Category</a></li>
+                <li><a href="#area">Area</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-footer">
+                <div class="icons text-white d-flex justify-content-center pb-3">
+                    <i class="fa-brands fa-facebook-f pe-3"></i>
+                    <i class="fa-brands fa-twitter-square pe-3"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="text-white-50"> Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="button-area h-100 px-2 py-3 d-flex flex-column justify-content-between">
+            <div class="icon">
+                <img src="images/logo.png" alt="website logo Yummy Face">
+            </div>
+            <div class="open-close d-flex justify-content-center ">
+                <i class="fa-solid fa-bars fa-2x open"></i>
+                <i class="fa-solid fa-xmark fa-2x close"></i>
+            </div>
+            <div class="controls d-flex flex-column justify-content-center align-items-center">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </aside>
+    <section class="home d-flex d-flex flex-column justify-content-start align-items-center" id="home">
+        <div class="search-area container mt-3 d-none">
+        </div>
+        <div class="content position-relative h-100 w-100 d-flex justify-content-center ">
+            <div class="container meal-area m-5 ">
+             
+            </div>
+            <div class="section-loader ">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
