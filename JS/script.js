@@ -124,18 +124,18 @@ function showMeals(meals, appenRow = true) {
             }
         }
         addRow();
-        $(".row").html(cartona);
+        $(".mainRow").html(cartona);
         $(".meal-item").click(function (e) {
             e.preventDefault();
             getMealDetails($(this).attr("data-id"));
         });
     } else {
-        $(".row").html("");
+        $(".mainRow").html("");
     }
     finishLoader();
 }
 function addRow() {
-    $(".home .meal-area").html(`<div class="row gy-4"></div>`);
+    $(".home .meal-area").html(`<div class="row gy-4 mainRow"></div>`);
 }
 function showMealDetails(meal) {
     let ingrediant = ``;
@@ -185,7 +185,7 @@ function showMealDetails(meal) {
    </div>
     </div>`;
     addRow();
-    $(".row").html(data);
+    $(".mainRow").html(data);
     finishLoader();
 }
 // ! #################### END COMMON FUNCTIONS ####################
@@ -194,7 +194,7 @@ function showMealDetails(meal) {
 
 function showSearch() {
     let data = ` <div class="d-flex px-5">
-    <div class="row gy-3">
+    <div class="row gy-3 w-100">
         <div class="col-md-6 ">
         <input type="text" placeholder="Search By Name" name="name"
         class="form-control me-3 bg-black search-input">
@@ -240,7 +240,7 @@ function showCategories(categories) {
         }
     }
     addRow();
-    $(".row").html(cartona);
+    $(".mainRow").html(cartona);
     $(".meal-item").click(function (e) {
         filterByCategory($(this).attr("data-id"));
     });
@@ -264,7 +264,7 @@ function showAreas(areas) {
         }
     }
     addRow();
-    $(".row").html(cartona);
+    $(".mainRow").html(cartona);
     $(".area-item").click(function (e) {
         filterByArea($(this).attr("data-id"));
     });
@@ -290,7 +290,7 @@ function showIngrediants(ingerdiants) {
         }
     }
     addRow();
-    $(".row").html(cartona);
+    $(".mainRow").html(cartona);
     $(".area-item").click(function (e) {
         filterIngrediant($(this).attr("data-id"));
     });
